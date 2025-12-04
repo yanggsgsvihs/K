@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="Calc.css"/>
+</head>
+<body class="app app--calculator">
+  <header class="header">
+    <h1 class="title">Calculadora</h1>
+    <nav class="nav">
+      
+      <a class="nav__link" href="tabuada.html">Tabuada</a>
+      <a class="nav__link nav__link--active" href="Calc.css">Calculadora</a>
+      <a class="nav__link" href="index.html">Adivinha Número</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="calc">
+      <div class="calc__display">
+        <div class="calc__prev" id="prevDisplay"></div>
+        <div class="calc__curr" id="currDisplay">0</div>
+      </div>
+
+      <div class="calc__keys">
+        <button class="btn btn--fn" data-action="clear">C</button>
+        <button class="btn btn--fn" data-action="delete">DEL</button>
+        <button class="btn btn--fn" data-action="percent">%</button>
+        <button class="btn btn--op" data-op="divide">÷</button>
+
+        <button class="btn" data-num="7">7</button>
+        <button class="btn" data-num="8">8</button>
+        <button class="btn" data-num="9">9</button>
+        <button class="btn btn--op" data-op="multiply">×</button>
+
+        <button class="btn" data-num="4">4</button>
+        <button class="btn" data-num="5">5</button>
+        <button class="btn" data-num="6">6</button>
+        <button class="btn btn--op" data-op="subtract">−</button>
+
+        <button class="btn" data-num="1">1</button>
+        <button class="btn" data-num="2">2</button>
+        <button class="btn" data-num="3">3</button>
+        <button class="btn btn--op" data-op="add">+</button>
+
+        <button class="btn btn--wide" data-num="0">0</button>
+        <button class="btn" data-dot=".">.</button>
+        <button class="btn btn--fn" data-action="sqrt">√</button>
+        <button class="btn btn--eq" data-action="equals">=</button>
+      </div>
+    </section>
+
+    <aside class="history">
+      <div class="history__header">
+        <h2 class="history__title">Histórico</h2>
+        <button class="btn btn--ghost" id="clearHistoryBtn">Limpar</button>
+      </div>
+      <ul class="history__list" id="historyList">
+      </ul>
+      <p class="history__hint">Clique em um item para reutilizar o resultado.</p>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <small>Projeto com foco em autonomia — HTML, CSS e JS.</small>
+  </footer>
+
+  <script src="calc.js"></script>
+</body>
+</html>

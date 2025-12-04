@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Numéria: Desafio de Aleatório</title>
+  <link rel="stylesheet" href="ADVnum.css"/>
+</head>
+<body>
+  <div class="bagulho">
+  <nav class="nav">
+      <a class="nav__link1" href="Calc.html">Calculadora</a>
+      <a class="nav__link2" href="tabuada.html">Tabuada</a>
+      <a class="nav__link nav__link--active" href="index.html">Adivinha Número</a>
+      </div>
+    <canvas id="confetti"></canvas>
+  <div class="container">
+    <div class="card main">
+      <div class="header">
+        <h1>Numéria: Aleatório</h1>
+      </div>
+      <div class="content">
+        
+        <div class="row">
+          <div class="stat"><div class="label">Nível</div><div class="value" id="level">1</div></div>
+          <div class="stat"><div class="label">Intervalo</div><div class="value" id="range">1 – 50</div></div>
+          <div class="stat"><div class="label">Tentativas</div><div class="value" id="tries">0</div></div>
+          <div class="stat"><div class="label">Recorde do nível</div><div class="value" id="best">—</div></div>
+        </div>
+
+        <div class="hint" id="hint" data-type="cold">
+          <span>Bem-vindo a Numéria</span>
+          <div>Digite seu palpite e descubra o número secreto.</div>
+        </div>
+
+        <div class="controls">
+          <input id="guess" type="number" min="1" placeholder="Seu palpite…"/>
+          <button id="btnGuess">Tentar</button>
+          <button class="secondary" id="btnGiveUp">Desistir</button>
+          <button class="secondary" id="btnReset">Reiniciar</button>
+        
+        </div>
+
+        <div class="log" id="log"></div>
+      </div>
+    </div>
+
+    <div class="card side">
+      <div class="header"><h1>Painel de histórico</h1></div>
+      <div class="content">
+        
+        <div class="section-title">Regras de calor</div>
+        <div class="list">
+          <div class="item"><div class="left"><div class="dot"></div><div>Frio: diferença ≥ 20%</div></div><div class="right">"Está frio!"</div></div>
+          <div class="item"><div class="left"><div class="dot"></div><div>Morno: 10% – 20%</div></div><div class="right">"Quase lá…"</div></div>
+          <div class="item"><div class="left"><div class="dot"></div><div>Quente: < 10%</div></div><div class="right">"Quente demais!"</div></div>
+        </div>
+
+        <div class="section-title" style="margin-top:16px;">Ranking local</div>
+        <div class="list" id="rank"></div>
+
+        <div class="footer">
+          <span class="badge">Acerte e </span>
+          <span>Apareça aqui!</span>
+        </div>
+      </div>
+</video>
+<audio id="acerto" src="YTDown.com_YouTube_Fahh-Sound-Effect_Media_QGm7W0KZen4_008_128k.mp3" type="audio/mpeg">
+</audio>
+<audio id="somErro" src="YTDown.com_YouTube_lobotomy-sound-effect_Media_iIeajyim5eU_006_128k.mp3" type="audio/mpeg"></audio>
+  </div>
+  <div class="toast" id="toast">Mensagem<b></b></div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+  <script src="ADVnum.js"></script>
+</body>
+</html

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tabuada</title>
+  <link rel="stylesheet" href="Calc.css"/>
+</head>
+<body class="app app--tabuada">
+  <header class="header">
+    <h1 class="title">Tabuada</h1>
+    <nav class="nav">
+      <a class="nav__link" href="Calc.html">Calculadora</a>
+      <a class="nav__link nav__link--active" href="tabuada.html">Tabuada</a>
+      <a class="nav__link" href="index.html">Adivinha Número</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <div class="panel__row">
+        <label class="field">
+          <span class="field__label">Número base</span>
+          <input type="number" id="baseNumber" class="field__input" placeholder="Ex: 7" />
+        </label>
+
+        <label class="field">
+          <span class="field__label">De</span>
+          <input type="number" id="rangeStart" class="field__input" value="1" />
+        </label>
+
+        <label class="field">
+          <span class="field__label">Até</span>
+          <input type="number" id="rangeEnd" class="field__input" value="10" />
+        </label>
+
+        <button class="btn btn--primary" id="generateBtn">Gerar</button>
+      </div>
+
+      <div class="panel__actions">
+        <button class="btn btn--ghost" id="copyBtn">Copiar</button>
+        <button class="btn btn--ghost" id="clearBtn">Limpar</button>
+      </div>
+
+      <div class="tabuada__result" id="tabuadaResult" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Projeto com foco em autonomia — HTML, CSS e JS.</small>
+  </footer>
+
+  <script src="tabuada.js"></script>
+</body>
+</html>
